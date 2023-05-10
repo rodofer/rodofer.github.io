@@ -25,11 +25,15 @@
 
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
-
+	<style>
+		@media print {
+			.fixed-top{position:absolute !important;top:0;right:0;left:0;z-index:1030}
+		}
+	</style>
 </head> 
 
 <body class="docs-page">    
-    <header class="header fixed-top">	    
+    <header class="header fixed-top header-print">	    
         <div class="branding docs-branding">
             <div class="container-fluid position-relative py-2">
                 <div class="docs-logo-wrapper">
@@ -75,7 +79,7 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#uso-variables">Uso de variables</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#operadores-aritmeticos">Operadores aritméticos</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#tipos-datos">Tipos de datos</a></li>
-				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#coversion-datos">Conversión de datos</a></li> -->
+				    <li class="nav-item"><a class="nav-link scrollto" href="#conversion-datos">Conversión de datos</a></li>
 
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#entrada-salida-datos"><span class="theme-icon-holder me-2"><i class="fas fa-keyboard"></i></span>Entrada y salida de datos</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#entrada-datos">Entrada de datos</a></li>
@@ -251,25 +255,31 @@ usuario_autorizado = False</code></pre></div>
 otra_cadena = 'adiós :('</code></pre></div>
 					</section>
 
-					<!-- <section class="docs-section" id="conversion-datos">
-						<h2 class="section-heading">Section Item 1.4</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-						
-						
-						<h5>Pagination Example:</h5>
-						<nav aria-label="Page navigation example">
-						    <ul class="pagination pl-0">
-							    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-							    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-							    <li class="page-item"><a class="page-link" href="#">2</a></li>
-							    <li class="page-item"><a class="page-link" href="#">3</a></li>
-							    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-						    </ul>
-						</nav>
-						
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-						
-					</section> -->
+					<section class="docs-section" id="conversion-datos">
+						<h2 class="section-heading">Conversión de datos</h2>
+						<p>En ocasiones resulta necesario transformar un tipo de dato en otro. Para ello existen funciones para tal propósito.</p>
+						<h4>int()</h4>
+						<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">var1 = int(3.14)
+# Ahora var1 tiene el valor 3
+
+var2 = int("48")
+# Ahora var2 tiene el valor 48
+</code></pre></div>
+						<h4>float()</h4>
+						<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">var1 = float(2)
+# Ahora var1 tiene el valor 2.0
+
+var2 = float("2")
+# Ahora var2 tiene el valor 2.0
+</code></pre></div>
+						<h4>str()</h4>
+						<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">var1 = str(7)
+# Ahora var1 tiene el valor "7"
+
+var2 = str(4.8)
+# Ahora var2 tiene el valor "4.8"
+</code></pre></div>
+					</section>
 
 			    </article>
 
