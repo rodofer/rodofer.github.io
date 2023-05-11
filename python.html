@@ -74,7 +74,15 @@
             </div> -->
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
-				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#variables-tipos-datos"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Variables y Tipos de datos</a></li>
+				    <li class="nav-item section-title"><a class="nav-link scrollto" href="#introduccion"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Introducción</a></li>
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#instalacion">Instalación</a></li> -->
+					<li class="nav-item"><a class="nav-link scrollto" href="#bloques-codigo">Bloques de código</a></li>
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#uso-variables">Uso de variables</a></li> -->
+					<!-- <li class="nav-item"><a class="nav-link scrollto" href="#operadores-aritmeticos">Operadores aritméticos</a></li> -->
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#tipos-datos">Tipos de datos</a></li> -->
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#conversion-datos">Conversión de datos</a></li> -->
+
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#variables-tipos-datos"><span class="theme-icon-holder me-2"><i class="fas fa-cube"></i></span>Variables y Tipos de datos</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#creacion-variables">Creación de variables</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#uso-variables">Uso de variables</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#operadores-aritmeticos">Operadores aritméticos</a></li>
@@ -127,9 +135,60 @@
 	    </div><!--//docs-sidebar-->
 	    <div class="docs-content">
 		    <div class="container">
-			    <article class="docs-article" id="variables-tipos-datos">
+			    <article class="docs-article" id="introduccion">
 				    <header class="docs-header">
-					    <h1 class="docs-heading">Variables y Tipos de datos<span class="docs-time">Last updated: 10-05-2023</span></h1>
+					    <h1 class="docs-heading">Introducción</h1>
+					    <section class="docs-intro">
+						    <p>Python es un lenguaje de programación interpretado de alto nivel, disponible en distintos sistemas y entornos, también es multipropósito, además soporta varios paradigmas de programación. Se caracteriza por su código limpio, simple y elegante.</p>
+						</section>
+				    </header>
+				    <!-- <section class="docs-section" id="instalacion">
+						<h2 class="section-heading">Instalación</h2>
+						<p>A</p>
+					</section> -->
+				    <section class="docs-section" id="bloques-codigo">
+						<h2 class="section-heading">Bloques de código</h2>
+						<p>En muchos lenguajes de programación, los bloques de código usan delimitadores que son representados por un par de llaves. Además las instrucciones deben terminar en punto y coma.</p>
+						<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="console hljs">bloque_a
+{
+    instruccion_1;
+    instruccion_2;
+
+    bloque_b
+    {
+        instruccion_3;
+
+        bloque_c
+        {
+            instruccion_4;
+            instruccion_5;
+            instruccion_6;
+        }
+    }
+}
+
+instruccion_7;</code></pre></div>
+						<p>En Python, no se necesitan llaves para definir el inicio y fin de un bloque. Tampoco se requiere punto y coma tras cada instrucción. En cambio, cada bloque debe comenzar con dos puntos y las instrucciones deben ir indentadas con cuatro espacios.</p>
+						<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="console hljs">bloque_a:
+    instruccion_1
+    instruccion_2
+
+    bloque_b:
+        instruccion_3
+
+        bloque_c:
+            instruccion_4
+            instruccion_5
+            instruccion_6
+
+instruccion_7</code></pre></div>
+					</section>
+				</article>
+
+				<article class="docs-article" id="variables-tipos-datos">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Variables y Tipos de datos</h1>
+						<!-- <h1 class="docs-heading">Variables y Tipos de datos<span class="docs-time">Last updated: 10-05-2023</span></h1> -->
 					    <section class="docs-intro">
 						    <p>Las variables son utilizadas para almacenar datos temporales, durante la ejecución de un programa.</p>
 						</section><!--//docs-intro-->
