@@ -96,7 +96,7 @@
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#control-flujo"><span class="theme-icon-holder me-2"><i class="fas fa-arrows-split-up-and-left fa-rotate-180"></i></span>Control de flujo</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#operadores-relacionales">Operadores relacionales</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#operadores-logicos">Operadores lógicos</a></li>
-				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Section Item 3.3</a></li> -->
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#if">Sentencia IF</a></li> -->
 
 				<!--
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Integrations</a></li>
@@ -232,7 +232,7 @@ numero = 7</code></pre></div>
 						<h2 class="section-heading">Uso de variables</h2>
 						<p>Una vez creadas las variables, en algún momento será necesario consultar los datos almacenados. Para ello, basta con llamarlas por su nombre en el código.</p>
 						<p>Considerando lo anterior, también se puede asignar el valor de una variable a otra:</p>
-						<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">numero_1 = 35
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">numero_1 = 35
 numero_2 = 10
 nuevo_numero = numero_1</code></pre></div>
 					</section>
@@ -289,7 +289,7 @@ nuevo_numero = numero_1</code></pre></div>
 							</table>
 						</div>
 						<p>Y como en matemáticas, también es posible agrupar operaciones usando paréntesis.</p>
-						<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">numero_1 = 21
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">numero_1 = 21
 numero_2 = 3
 numero_3 = 4
 promedio = (numero_1 + numero_2 + numero_3) / 3</code></pre></div>
@@ -301,16 +301,16 @@ promedio = (numero_1 + numero_2 + numero_3) / 3</code></pre></div>
 						<p>En esencia, existen tres tipos de datos en Python: numéricos, booleanos y cadenas de caracteres.</p><br>
 						<h4>Numérico</h4>
 						<p>Los datos de tipo numérico se dividen en enteros (int), reales o de coma flotante (float) y complejos (complex):</p>
-						<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">numero_entero = 5
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">numero_entero = 5
 numero_real = 5.4
 numero_complejo = 1+5j</code></pre></div>
 						<h4>Booleano</h4>
 						<p>Los datos de tipo booleanos (bool) permiten almacenar dos valores: True o False</p>
-						<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">dato_encontrado = True
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">dato_encontrado = True
 usuario_autorizado = False</code></pre></div>
 						<h4>Cadena de caracteres</h4>
 						<p>Los datos de tipo cadena de caracteres (str), también conocidos como <i>string</i>, permiten almacenar secuencias de caracteres, es decir, texto. Y es preciso incluir la cadena entre comillas dobles o simples.</p>
-						<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">una_cadena = "¡Hola!"
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">una_cadena = "¡Hola!"
 otra_cadena = 'adiós :('</code></pre></div>
 					</section>
 
@@ -318,21 +318,21 @@ otra_cadena = 'adiós :('</code></pre></div>
 						<h2 class="section-heading">Conversión de datos</h2>
 						<p>En ocasiones resulta necesario transformar un tipo de dato en otro. A continuación se muestran ejemplos de las funciones más utilizadas para este propósito.</p>
 						<h4>int()</h4>
-						<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">var1 = int(3.14)
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">var1 = int(3.14)
 # Ahora var1 tiene el valor 3
 
 var2 = int("48")
 # Ahora var2 tiene el valor 48
 </code></pre></div>
 						<h4>float()</h4>
-						<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">var1 = float(2)
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">var1 = float(2)
 # Ahora var1 tiene el valor 2.0
 
 var2 = float("2")
 # Ahora var2 tiene el valor 2.0
 </code></pre></div>
 						<h4>str()</h4>
-						<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">var1 = str(7)
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">var1 = str(7)
 # Ahora var1 tiene el valor "7"
 
 var2 = str(4.8)
@@ -368,18 +368,18 @@ var2 = str(4.8)
 
 					<section class="docs-section" id="salida-datos">
 						<h2 class="section-heading">Salida de datos</h2>
-						<p>La función <code>print()</code> permite <i>imprimir</i> información por pantalla, recibiendo como parámetro los datos a mostrar.</code></p>
-						<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print("Hola mundo")
-# imprime "Hola mundo"
-
-print(5 + 5)
-# imprime "10"
-
-mensaje = "¡Bienvenido a Python!"
+						<p>La función <code>print()</code> facilita la acción de mostrar información por pantalla, recibiendo como parámetro los datos que se desean <i>imprimir</i>.</code></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print("Hola mundo")
+# imprime "Hola mundo"</code></pre></div>
+						<p>Si la función recibe como parámetro una expresión aritmética, imprime por pantalla su resultado.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(5 + 5)
+# imprime "10"</code></pre></div>
+						<p>Tambiém se puede mostrar el contenido de una variable.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">mensaje = "¡Bienvenido a Python!"
 print(mensaje)
-# imprime "¡Bienvenido a Python!"
-
-num1 = 15
+# imprime "¡Bienvenido a Python!"</code></pre></div>
+						<p>Asimismo, se pueden combinar datos literales y de variables.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">num1 = 15
 num2 = 6
 resultado = num1 + num2
 print(f"La suma de {num1} y {num2} es {resultado}")
@@ -391,7 +391,7 @@ print(f"La suma de {num1} y {num2} es {resultado}")
 				    <header class="docs-header">
 					    <h1 class="docs-heading">Control de flujo</h1>
 					    <section class="docs-intro">
-						    <p>El uso de operadores lógicos y relacionales, junto a estructuras de control condicionales e iterativas, permiten que un programa <i>piense y decida</i> por si mismo.</p>
+						    <p>El uso de operadores lógicos y relacionales, junto a estructuras de control condicionales e iterativas, permiten que un programa <i>piense y decida</i> por sí mismo.</p>
 						</section>
 				    </header>
 				     <section class="docs-section" id="operadores-relacionales">
@@ -475,6 +475,10 @@ print(f"La suma de {num1} y {num2} es {resultado}")
 						</div>
 					</section>
 
+					<!-- <section class="docs-section" id="if">
+						<h2 class="section-heading">Sentencia IF</h2>
+						<p>Se trata de una sentencia condicional, definida como bloque.</p>
+					</section> -->
 					<!-- <section class="docs-section" id="item-3-3">
 						<h2 class="section-heading">Section Item 3.3</h2>
 						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
