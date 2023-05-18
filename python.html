@@ -96,7 +96,7 @@
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#control-flujo"><span class="theme-icon-holder me-2"><i class="fas fa-arrows-split-up-and-left fa-rotate-180"></i></span>Control de flujo</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#operadores-relacionales">Operadores relacionales</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#operadores-logicos">Operadores lógicos</a></li>
-				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#if">Sentencia IF</a></li> -->
+				    <li class="nav-item"><a class="nav-link scrollto" href="#if">Sentencia IF</a></li>
 
 				<!--
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Integrations</a></li>
@@ -475,10 +475,60 @@ print(f"La suma de {num1} y {num2} es {resultado}")
 						</div>
 					</section>
 
-					<!-- <section class="docs-section" id="if">
+					<section class="docs-section" id="if">
 						<h2 class="section-heading">Sentencia IF</h2>
-						<p>Se trata de una sentencia condicional, definida como bloque.</p>
-					</section> -->
+						<p>Se trata de una estructura que evalua una condición. Si ésta se cumple, se ejecutan las instrucciones dentro del bloque.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="console hljs">instruccion_1
+
+if condiccion:
+    instruccion_2
+</code></pre></div>
+						<p>En el ejemplo anterior, existen 2 instrucciones. La primera se ejecutará sin problema. Sin embargo, <code>instruccion_2</code> se encuentra sujeta al cumplimiento de una condición para ser ejecutada.</p>
+						<p>A continuación, un ejemplo concreto utilizando el operador relacional <code>>=</code>.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">edad = 22
+
+if edad >= 18:
+    print("¡Hola, bienvenido!")
+</code></pre></div>
+						<p>Adicionalmente, existe un complemento a la sentencia <code>if</code> llamado <code>else</code>. Este bloque agrupa instrucciones que se ejecutarán cuando la condición del if no se cumple.</p>
+
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">edad = 17
+
+if edad >= 18:
+    print("¡Hola, bienvenido!")
+else:
+    print("Debes ser mayor de edad")
+</code></pre></div>
+						<p>La construcción anterior (if-else) sirve cuando el programa tiene dos posibles caminos que recorrer, si no es uno entonces es el otro. No obstante, es probable que se requiera diseñar un algoritmo con más de dos flujos.</p>
+						<p>Python pone a disposición el bloque <code>elif</code>, que también evalúa una condición.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs"># el usuario elije una fruta
+
+if fruta == "manzana":
+    print("Has elejido Manzana")
+elif fruta == "naranja":
+    print("Has elejido Naranja")
+elif fruta == "platano":
+    print("Has elejido Platano")
+else:
+    print("No tenemos la fruta indicada")
+</code></pre></div>
+
+						<p>Es posible crear condiciones más complejas con la ayuda de operadores lógicos.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">if fruta == "manzana" and total_manzanas > 0:
+    print("Has elejido Manzana")
+</code></pre></div>
+						<div class="callout-block callout-block-info">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-circle-info"></i>
+									</span>
+									Info
+								</h4>
+								<p><code>if</code>, <code>elif</code> y <code>else</code> son <a href="./python#bloques-codigo">bloques de código</a>, por lo tanto su contenido debe ir indentado.</p>
+							</div>
+						</div>
+					</section>
 					<!-- <section class="docs-section" id="item-3-3">
 						<h2 class="section-heading">Section Item 3.3</h2>
 						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
