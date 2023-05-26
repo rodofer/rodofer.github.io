@@ -157,17 +157,11 @@
     bloque_b
     {
         instruccion_3;
-
-        bloque_c
-        {
-            instruccion_4;
-            instruccion_5;
-            instruccion_6;
-        }
     }
 }
 
-instruccion_7;</code></pre></div>
+instruccion_4;
+</code></pre></div>
 						<p>En Python, no se necesitan llaves para definir el inicio y fin de un bloque. Tampoco se requiere punto y coma tras cada instrucción. En cambio, cada bloque debe comenzar con dos puntos y las instrucciones deben ir indentadas con cuatro espacios.</p>
 						<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="console hljs">bloque_a:
     instruccion_1
@@ -176,12 +170,7 @@ instruccion_7;</code></pre></div>
     bloque_b:
         instruccion_3
 
-        bloque_c:
-            instruccion_4
-            instruccion_5
-            instruccion_6
-
-instruccion_7</code></pre></div>
+instruccion_4</code></pre></div>
 					</section>
 				</article>
 
@@ -501,9 +490,7 @@ else:
 </code></pre></div>
 						<p>La construcción anterior (if-else) sirve cuando el programa tiene dos posibles caminos que recorrer, si no es uno entonces es el otro. No obstante, es probable que se requiera diseñar un algoritmo con más de dos flujos.</p>
 						<p>Python pone a disposición el bloque <code>elif</code>, que también evalúa una condición.</p>
-<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs"># el usuario elije una fruta
-
-if fruta == "manzana":
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">if fruta == "manzana":
     print("Has elejido Manzana")
 elif fruta == "naranja":
     print("Has elejido Naranja")
