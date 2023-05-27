@@ -98,12 +98,10 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#operadores-logicos">Operadores lógicos</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#if">Sentencia IF</a></li>
 
-				<!--
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Integrations</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Section Item 4.1</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Section Item 4.2</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Section Item 4.3</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#colecciones-datos"><span class="theme-icon-holder me-2"><i class="fas fa-cubes"></i></span>Colecciones de datos</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#listas">Listas</a></li>
 
+				<!--
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Utilities</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Section Item 5.1</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Section Item 5.2</a></li>
@@ -522,30 +520,79 @@ else:
 					</section> -->
 			    </article>
 
-			<!--
-			    <article class="docs-article" id="section-4">
+			    <article class="docs-article" id="colecciones-datos">
 				    <header class="docs-header">
-					    <h1 class="docs-heading">Intergrations</h1>
+					    <h1 class="docs-heading">Colecciones de datos</h1>
 					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						    <p></p>
 						</section>
 				    </header>
-				     <section class="docs-section" id="item-4-1">
-						<h2 class="section-heading">Section Item 4.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section>
-					
-					<section class="docs-section" id="item-4-2">
-						<h2 class="section-heading">Section Item 4.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section>
-					
-					<section class="docs-section" id="item-4-3">
-						<h2 class="section-heading">Section Item 4.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+				     <section class="docs-section" id="listas">
+						<h2 class="section-heading">Listas</h2>
+						<p>Las listas son un tipo de dato compuesto que nos permiten almacenar multiples valores (elementos), incluso de diferentes tipos, en una misma variable. En otros lenguajes de programación las listas se conocen como arrays, vectores o arreglos.</p>
+						<p>Por el momento, se han utilizado variables para almacenar datos individuales, por ejemplo para guardar el nombre de unas frutas.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">fruta1 = "manzana"
+fruta2 = "uva"
+fruta3 = "platano"</code></pre></div>
+						<h4>Creación de listas</h4>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">frutas = ["manzana", "uva", "platano"]</code></pre></div>
+						<h4>Acceso a los elementos</h4>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas[0]) # imprime "manzana"
+print(frutas[1]) # imprime "uva"
+print(frutas[2]) # imprime "platano"</code></pre></div>
+						<h4>Modificación de elementos</h4>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
+# imprime ["manzana", "uva", "platano"]
+
+frutas[2] = "pera"
+
+print(frutas)
+# imprime ["manzana", "uva", <strong>"pera"</strong>]
+</code></pre></div>
+						<h4>Agregación de elementos</h4>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
+# imprime ["manzana", "uva", "pera"]
+
+frutas.append("fresa")
+
+print(frutas)
+# imprime ["manzana", "uva", "pera", <strong>"fresa"</strong>]
+</code></pre></div>
+
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
+# imprime ["manzana", "uva", "pera", "fresa"]
+
+frutas.insert(2, "kiwi")
+
+print(frutas)
+# imprime ["manzana", "uva", <strong>"kiwi"</strong>, "pera", "fresa"]
+</code></pre></div>
+						<h4>Eliminación de elementos</h4>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
+# imprime ["manzana", "uva", "kiwi", "pera", "fresa"]
+
+frutas.pop()
+
+print(frutas)
+# imprime ["manzana", "uva", "kiwi", "pera"]
+</code></pre></div>
+
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
+# imprime ["manzana", "uva", "kiwi", "pera"]
+
+frutas.pop(2)
+
+print(frutas)
+# imprime ["manzana", "uva", "pera"]
+</code></pre></div>
 					</section>
 			    </article>
-
+			<!--
 			    <article class="docs-article" id="section-5">
 				    <header class="docs-header">
 					    <h1 class="docs-heading">Utilities</h1>
