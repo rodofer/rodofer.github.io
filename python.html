@@ -97,6 +97,7 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#operadores-relacionales">Operadores relacionales</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#operadores-logicos">Operadores lógicos</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#if">Sentencia IF</a></li>
+					<!-- <li class="nav-item"><a class="nav-link scrollto" href="#while">Ciclo WHILE</a></li> -->
 
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#colecciones-datos"><span class="theme-icon-holder me-2"><i class="fas fa-cubes"></i></span>Colecciones de datos</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#listas">Listas</a></li>
@@ -514,6 +515,11 @@ else:
 							</div>
 						</div>
 					</section>
+
+					<!-- <section class="docs-section" id="while">
+						<h2 class="section-heading">Ciclo WHILE</h2>
+						<p></p>
+					</section> -->
 					<!-- <section class="docs-section" id="item-3-3">
 						<h2 class="section-heading">Section Item 3.3</h2>
 						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
@@ -535,15 +541,18 @@ else:
 fruta2 = "uva"
 fruta3 = "platano"</code></pre></div>
 						<h4>Creación de listas</h4>
-						<p></p>
+						<p>Las listas pueden ser guardadas en variables, y todos sus valores deben ser incluidos dentro de un par de corchetes y separados por coma.</p>
 <div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">frutas = ["manzana", "uva", "platano"]</code></pre></div>
 						<h4>Acceso a los elementos</h4>
-						<p></p>
+						<p>Para obtener los elementos de una lista, simplemente se requiere hacer referencia a la variable que la almacena.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
+# imprime ["manzana", "uva", "platano"]</code></pre></div>
+						<p>Sin embargo, es factible acceder a un determinado elemento haciendo referencia a su índice. Un número entero que va desde 0 hasta la cantidad de elementos menos 1.</p>
 <div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas[0]) # imprime "manzana"
 print(frutas[1]) # imprime "uva"
 print(frutas[2]) # imprime "platano"</code></pre></div>
 						<h4>Modificación de elementos</h4>
-						<p></p>
+						<p>Los valores asignados a cada elemento pueden ser cambiados, haciendo referencia al índice del elemento para asignarle un nuevo valor.</p>
 <div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
 # imprime ["manzana", "uva", "platano"]
 
@@ -553,7 +562,7 @@ print(frutas)
 # imprime ["manzana", "uva", <strong>"pera"</strong>]
 </code></pre></div>
 						<h4>Agregación de elementos</h4>
-						<p></p>
+						<p>Por medio del método <code>.append()</code> se agrega un nuevo elemento al final de una lista.</code></p>
 <div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
 # imprime ["manzana", "uva", "pera"]
 
@@ -562,7 +571,7 @@ frutas.append("fresa")
 print(frutas)
 # imprime ["manzana", "uva", "pera", <strong>"fresa"</strong>]
 </code></pre></div>
-
+						<p>A través del método <code>.insert()</code> se agrega un nuevo elemento en una posición dada (índice).</p>
 <div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
 # imprime ["manzana", "uva", "pera", "fresa"]
 
@@ -572,7 +581,7 @@ print(frutas)
 # imprime ["manzana", "uva", <strong>"kiwi"</strong>, "pera", "fresa"]
 </code></pre></div>
 						<h4>Eliminación de elementos</h4>
-						<p></p>
+						<p>El método <code>.pop()</code> elimina el último elemento de una lista.</p>
 <div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
 # imprime ["manzana", "uva", "kiwi", "pera", "fresa"]
 
@@ -581,7 +590,7 @@ frutas.pop()
 print(frutas)
 # imprime ["manzana", "uva", "kiwi", "pera"]
 </code></pre></div>
-
+						<p>Del mismo modo el método <code>.pop()</code> puede eliminar un elemento en particular si se precisa su índice.</p>
 <div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
 # imprime ["manzana", "uva", "kiwi", "pera"]
 
@@ -590,6 +599,18 @@ frutas.pop(2)
 print(frutas)
 # imprime ["manzana", "uva", "pera"]
 </code></pre></div>
+
+						<div class="callout-block callout-block-info">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-circle-info"></i>
+									</span>
+									Info
+								</h4>
+								<p>El método <code>.pop()</code> además de eliminar un elemento, devuelve el elemento borrado, en caso que sea necesario conocerlo.</p>
+							</div>
+						</div>
 					</section>
 			    </article>
 			<!--
