@@ -97,7 +97,7 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#operadores-relacionales">Operadores relacionales</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#operadores-logicos">Operadores lógicos</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#if">Sentencia IF</a></li>
-					<!-- <li class="nav-item"><a class="nav-link scrollto" href="#while">Ciclo WHILE</a></li> -->
+					<li class="nav-item"><a class="nav-link scrollto" href="#while">Ciclo WHILE</a></li>
 
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#colecciones-datos"><span class="theme-icon-holder me-2"><i class="fas fa-cubes"></i></span>Colecciones de datos</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#listas">Listas</a></li>
@@ -183,12 +183,12 @@ instruccion_4</code></pre></div>
 				    </header>
 				    <section class="docs-section" id="creacion-variables">
 						<h2 class="section-heading">Creación de variables</h2>
-						<p>Para crear variables en Python, simplemente se requiere identificarlas con un nombre y asignarles un valor. Además, se puede reasignar su valor cada vez que sea necesario, incluso con un dato de otro tipo.</p>
+						<p>Para crear variables en Python, simplemente se requiere identificarlas con un nombre y asignarles un valor. Además, ese valor puede ser cambiado cada vez que sea necesario.</p>
 						<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">numero = 2
 numero = 7</code></pre></div>
 						<p>Algunas consideraciones para nombres de variables:</p>
 						<ul>
-							<li>El nombre <strong>puede comenzar</strong> con guiones bajo o letras, seguido de otras letras, números o guiones bajo.</li>
+							<li>El nombre <strong>puede comenzar</strong> con guiones bajos o letras, seguido de otras letras, números o guiones bajos.</li>
 							<li>El nombre <strong>no debe incluir</strong> espacios en blanco.</li>
 							<li>El nombre <strong>no debe ser igual</strong> a una palabra reservada del lenguaje Python, por ejemplo <i>break, while, class</i>.</li>
 						</ul>
@@ -218,7 +218,7 @@ numero = 7</code></pre></div>
 					
 					<section class="docs-section" id="uso-variables">
 						<h2 class="section-heading">Uso de variables</h2>
-						<p>Una vez creadas las variables, en algún momento será necesario consultar los datos almacenados. Para ello, basta con llamarlas por su nombre en el código.</p>
+						<p>Una vez creadas las variables, en algún momento será necesario consultar los datos almacenados en ellas. Y para esto, basta con llamarlas por su nombre en el código.</p>
 						<p>Considerando lo anterior, también se puede asignar el valor de una variable a otra:</p>
 <div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">numero_1 = 35
 numero_2 = 10
@@ -371,7 +371,7 @@ print(mensaje)
 num2 = 6
 resultado = num1 + num2
 print(f"La suma de {num1} y {num2} es {resultado}")
-# imprime "La suma de 15 y 6 es 21</code></pre></div>
+# imprime "La suma de 15 y 6 es 21"</code></pre></div>
 					</section>
 			    </article>
 
@@ -516,10 +516,93 @@ else:
 						</div>
 					</section>
 
-					<!-- <section class="docs-section" id="while">
+					<section class="docs-section" id="while">
 						<h2 class="section-heading">Ciclo WHILE</h2>
-						<p></p>
-					</section> -->
+						<p>Es una estructura de control iterativa que permite la ejecución de una serie de instrucciones en forma repetitiva, mientras (while en inglés) se cumpla una condición.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="console hljs">while condición:
+    instrucciones</code></pre></div>
+						<p>En el siguiente ejemplo se utiliza la condición <code>contador < 3</code> para determinar si las instrucciones dentro del bloque se pueden ejecutar, similar al comportamiento de la sentencia IF. Pero en lugar de ejecutar las instrucciones una sola vez, estas podrían repetirse si la condición se sigue cumpliendo, o terminar con el ciclo cuando la condición deje de cumplirse.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">contador = 0
+
+while contador < 3:
+    contador += 1
+    print(contador)
+</code></pre></div>
+						<p>A continuación se representa la ejecución del código anterior, comenzando con la instrucción <code>contador = 0</code> para asignar un valor inicial a la variable. Luego el programa llega al inicio del bloque WHILE para evaluar la condición <code>contador < 3</code>. Y como contador es igual a cero (inicialmente), la condición se cumple porque cero es menor que tres. En seguida se ejecuntan las instrucciones dentro del bloque, primero <code>contador += 1</code> que suma uno al valor actual del contador, y <code>print(contador)</code> que imprime el valor modificado de esa variable, dando lugar a la <strong>primera iteración</strong>.</p>
+						<p>En efecto, al tratarse de un bloque repetitivo, después de ejecutar las instrucciones en la primera iteración, se evalua nuevamente la condicón en el inicio del bloque. La variable contador ahora tiene el valor uno, y la condición continua cumpliendose porque uno es menor que tres, permitiendo así la <strong>segunda iteración</strong>.</p>
+						<p>Como es de esperar en un ciclo iterativo, de nuevo la condición es evaluada. La variable contador ahora vale dos, por lo tanto la condición vuelve a satisfacerse ya que dos es menor que tres, ocasionando la <strong>tercera iteración</strong>.</p>
+						<p>Luego de la tercera iteración, el valor de la variable contador es tres, y la condición deja cumplirse porque tres no es menor que tres, sino que es igual a tres. Entonces el ciclo termina.</p>
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Contador</th>
+									<th>Condición</th>
+									<th>print()</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1° intento</td>
+									<td>0</td>
+									<td>0 < 3 = True</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>2° intento</td>
+									<td>1</td>
+									<td>1 < 3 = True</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>3° intento</td>
+									<td>2</td>
+									<td>2 < 3 = True</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>4° intento</td>
+									<td>3</td>
+									<td>3 < 3 = False</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="callout-block callout-block-warning">
+                            <div class="content">
+                                <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-bullhorn"></i>
+		                            </span>
+	                                Advertencia
+	                            </h4>
+                                <p>Si el bloque WHILE está sujeto al cumplimiento de una condición que no cambia, podría generarse un ciclo infinito.</p>
+                            </div>
+                        </div>
+						<br>
+						<h4>Sentencia BREAK</h4>
+						<p>Un ciclo puede terminar antes de lo esperado si se ejecuta la instrucción <code>break</code>, sin importar que la condición del bloque se cumpla o no.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">contador = 0
+
+while contador < 3:
+    contador += 1
+    if contador == 2:
+        break
+    print(contador)
+</code></pre></div>
+						<h4>Setencia CONTINUE</h4>
+						<p>También se puede interrumpir una iteración en particular si se incluye la instrucción <code>continue</code>, provocando que termine la iteración en curso y comience la siguiente.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">contador = 0
+
+while contador < 3:
+    contador += 1
+    if contador == 2:
+        continue
+    print(contador)
+</code></pre></div>
+
+					</section>
 					<!-- <section class="docs-section" id="item-3-3">
 						<h2 class="section-heading">Section Item 3.3</h2>
 						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
