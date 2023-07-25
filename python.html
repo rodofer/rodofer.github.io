@@ -75,12 +75,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
 				    <li class="nav-item section-title"><a class="nav-link scrollto" href="#introduccion"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Introducción</a></li>
-				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#instalacion">Instalación</a></li> -->
 					<li class="nav-item"><a class="nav-link scrollto" href="#bloques-codigo">Bloques de código</a></li>
-				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#uso-variables">Uso de variables</a></li> -->
-					<!-- <li class="nav-item"><a class="nav-link scrollto" href="#operadores-aritmeticos">Operadores aritméticos</a></li> -->
-				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#tipos-datos">Tipos de datos</a></li> -->
-				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#conversion-datos">Conversión de datos</a></li> -->
 
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#variables-tipos-datos"><span class="theme-icon-holder me-2"><i class="fas fa-cube"></i></span>Variables y Tipos de datos</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#creacion-variables">Creación de variables</a></li>
@@ -93,14 +88,26 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#entrada-datos">Entrada de datos</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#salida-datos">Salida de datos</a></li>
 
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#colecciones-datos"><span class="theme-icon-holder me-2"><i class="fas fa-cubes"></i></span>Colecciones de datos</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#listas">Listas</a></li>
+
+					<!-- <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#manipulacion-cadenas"><span class="theme-icon-holder me-2"><i class="fas fa-quote-left"></i></span>Manipulación de cadenas</a></li> -->
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#separacion-cadenas">Separación de cadenas</a></li> -->
+					<!-- <li class="nav-item"><a class="nav-link scrollto" href="#union-cadenas">Unión de cadenas</a></li> -->
+					<!-- <li class="nav-item"><a class="nav-link scrollto" href="#busqueda-cadenas">Búsqueda de cadenas</a></li> -->
+					<!-- <li class="nav-item"><a class="nav-link scrollto" href="#transformacion-cadenas">Transformación de cadenas</a></li> -->
+
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#control-flujo"><span class="theme-icon-holder me-2"><i class="fas fa-arrows-split-up-and-left fa-rotate-180"></i></span>Control de flujo</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#operadores-relacionales">Operadores relacionales</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#operadores-logicos">Operadores lógicos</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#if">Sentencia IF</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#while">Ciclo WHILE</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#for">Ciclo FOR</a></li>
 
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#colecciones-datos"><span class="theme-icon-holder me-2"><i class="fas fa-cubes"></i></span>Colecciones de datos</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#listas">Listas</a></li>
+					<!-- <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#funciones"><span class="theme-icon-holder me-2"><i class="fas fa-solid fa-box"></i></span>Funciones</a></li> -->
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#creacion-funciones">Creación de funciones</a></li> -->
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#funciones-con-parametros">Funciones con parámetros</a></li> -->
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#funciones-con-retorno">Funciones con retorno</a></li> -->
 
 				<!--
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Utilities</a></li>
@@ -375,7 +382,186 @@ print(f"La suma de {num1} y {num2} es {resultado}")
 					</section>
 			    </article>
 
-			    <article class="docs-article" id="control-flujo">
+				<article class="docs-article" id="colecciones-datos">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Colecciones de datos</h1>
+					    <section class="docs-intro">
+						    <p>Las colecciones de datos son un tipo de dato compuesto que permite almacenar múltiples valores, incluso de diferentes tipos, en una misma variable.</p>
+						</section>
+				    </header>
+				     <section class="docs-section" id="listas">
+						<h2 class="section-heading">Listas</h2>
+						<p>Las listas son un conjunto ordenado de datos (elementos). En otros lenguajes de programación las listas se conocen como arrays, vectores o arreglos.</p>
+						<p>Por el momento, se han utilizado variables para almacenar datos individuales, por ejemplo para guardar el nombre de unas frutas.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">fruta1 = "manzana"
+fruta2 = "uva"
+fruta3 = "platano"</code></pre></div>
+						<h4>Creación de listas</h4>
+						<p>Las listas pueden ser guardadas en variables, y todos sus valores deben ser incluidos dentro de un par de corchetes y separados por coma.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">frutas = ["manzana", "uva", "platano"]</code></pre></div>
+						<h4>Acceso a los elementos</h4>
+						<p>Para obtener los elementos de una lista, simplemente se requiere hacer referencia a la variable que la almacena.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
+# imprime ["manzana", "uva", "platano"]</code></pre></div>
+						<p>Sin embargo, es factible acceder a un determinado elemento haciendo referencia a su índice. Un número entero que va desde 0 hasta la cantidad de elementos menos 1.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas[0]) # imprime "manzana"
+print(frutas[1]) # imprime "uva"
+print(frutas[2]) # imprime "platano"</code></pre></div>
+						<h4>Modificación de elementos</h4>
+						<p>Los valores asignados a cada elemento pueden ser cambiados, haciendo referencia al índice del elemento para asignarle un nuevo valor.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
+# imprime ["manzana", "uva", "platano"]
+
+frutas[2] = "pera"
+
+print(frutas)
+# imprime ["manzana", "uva", <strong>"pera"</strong>]
+</code></pre></div>
+						<h4>Agregación de elementos</h4>
+						<p>Por medio del método <code>.append()</code> se agrega un nuevo elemento al final de una lista.</code></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
+# imprime ["manzana", "uva", "pera"]
+
+frutas.append("fresa")
+
+print(frutas)
+# imprime ["manzana", "uva", "pera", <strong>"fresa"</strong>]
+</code></pre></div>
+						<p>A través del método <code>.insert()</code> se agrega un nuevo elemento en una posición dada (índice).</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
+# imprime ["manzana", "uva", "pera", "fresa"]
+
+frutas.insert(2, "kiwi")
+
+print(frutas)
+# imprime ["manzana", "uva", <strong>"kiwi"</strong>, "pera", "fresa"]
+</code></pre></div>
+						<h4>Eliminación de elementos</h4>
+						<p>El método <code>.pop()</code> elimina el último elemento de una lista.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
+# imprime ["manzana", "uva", "kiwi", "pera", "fresa"]
+
+frutas.pop()
+
+print(frutas)
+# imprime ["manzana", "uva", "kiwi", "pera"]
+</code></pre></div>
+						<p>Del mismo modo el método <code>.pop()</code> puede eliminar un elemento en particular si se precisa su índice.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
+# imprime ["manzana", "uva", "kiwi", "pera"]
+
+frutas.pop(2)
+
+print(frutas)
+# imprime ["manzana", "uva", "pera"]
+</code></pre></div>
+
+						<div class="callout-block callout-block-info">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-circle-info"></i>
+									</span>
+									Info
+								</h4>
+								<p>El método <code>.pop()</code> además de eliminar un elemento, devuelve el elemento borrado, en caso que sea necesario conocerlo.</p>
+							</div>
+						</div>
+					</section>
+			    </article>
+
+			    <!-- <article class="docs-article" id="manipulacion-cadenas">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Manipulación de Cadenas</h1>
+					    <section class="docs-intro">
+						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						</section>
+				    </header>
+				    <section class="docs-section" id="separacion-cadenas">
+						<h2 class="section-heading">Separación de cadenas</h2>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">cadena = '¡Hola mundo!\n¿Cómo estás?'
+print(cadena.split())
+# ['¡Hola', 'mundo!', '¿Cómo', 'estás?']
+</code></pre></div>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">cadena = '¡Hola mundo!\n¿Cómo estás?'
+print(cadena.split('mundo'))
+# ['¡Hola ', '!\n¿Cómo estás?']
+</code></pre></div>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">cadena = '¡Hola mundo!\n¿Cómo estás?'
+print(cadena.splitlines())
+# ['¡Hola mundo!', '¿Cómo estás?']
+</code></pre></div>
+					</section>
+				    <section class="docs-section" id="union-cadenas">
+						<h2 class="section-heading">Unión de cadenas</h2>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">lista = ['Hola', 'terrícolas']
+cadena = ' '.join(lista)
+print(cadena)
+# 'Hola terrícolas'
+</code></pre></div>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">lista = ['C', 'Java', 'Python']
+cadena = '-'.join(lista)
+print(cadena)
+# 'C-Java-Python'
+</code></pre></div>
+					</section>
+					<section class="docs-section" id="busqueda-cadenas">
+						<h2 class="section-heading">Búsqueda de cadenas</h2>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">cadena = 'Había una vez una estrella azul'
+print(cadena.count('una'))
+# 2
+</code></pre></div>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">cadena = 'elefante'
+print(cadena.find('e'))
+# 0
+</code></pre></div>
+<div class="docs-code-block"><pre class="rounded"><code class="">cadena: <strong>e</strong> l e f a n t e
+índice: <strong>0</strong> 1 2 3 4 5 6 7
+        ^
+</code></pre></div>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">cadena = 'elefante'
+print(cadena.rfind('e'))
+# 7
+</code></pre></div>
+<div class="docs-code-block"><pre class="rounded"><code class="">cadena: e l e f a n t <strong>e</strong>
+índice: 0 1 2 3 4 5 6 <strong>7</strong>
+                      ^
+</code></pre></div>
+					</section>
+					<section class="docs-section" id="transformacion-cadenas">
+						<h2 class="section-heading">Transformación de cadenas</h2>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">cadena = 'hola mundo'
+print(cadena.capitalize())
+# 'Hola mundo'
+</code></pre></div>
+<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">cadena = 'Hola Mundo'
+print(cadena.lower())
+# 'hola mundo'
+</code></pre></div>
+<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">cadena = 'Hola Mundo'
+print(cadena.upper())
+# 'HOLA MUNDO'
+</code></pre></div>
+<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">cadena = '  Hola mundo '
+print(cadena.strip())
+# 'Hola mundo'
+</code></pre></div>
+					</section>
+				</article> -->
+
+				<article class="docs-article" id="control-flujo">
 				    <header class="docs-header">
 					    <h1 class="docs-heading">Control de flujo</h1>
 					    <section class="docs-intro">
@@ -468,7 +654,7 @@ print(f"La suma de {num1} y {num2} es {resultado}")
 						<p>Se trata de una estructura que evalua una condición. Si ésta se cumple, se ejecutan las instrucciones dentro del bloque.</p>
 <div class="docs-code-block"><pre class="shadow-lg rounded"><code class="console hljs">instruccion_1
 
-if condiccion:
+if CONDICIÓN:
     instruccion_2
 </code></pre></div>
 						<p>En el ejemplo anterior, existen 2 instrucciones. La primera se ejecutará sin problema. Sin embargo, <code>instruccion_2</code> se encuentra sujeta al cumplimiento de una condición para ser ejecutada.</p>
@@ -519,7 +705,7 @@ else:
 					<section class="docs-section" id="while">
 						<h2 class="section-heading">Ciclo WHILE</h2>
 						<p>Es una estructura de control iterativa que permite la ejecución de una serie de instrucciones en forma repetitiva, mientras (while en inglés) se cumpla una condición.</p>
-<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="console hljs">while condición:
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="console hljs">while CONDICIÓN:
     instrucciones</code></pre></div>
 						<p>En el siguiente ejemplo se utiliza la condición <code>contador < 3</code> para determinar si las instrucciones dentro del bloque se pueden ejecutar, similar al comportamiento de la sentencia IF. Pero en lugar de ejecutar las instrucciones una sola vez, estas podrían repetirse si la condición se sigue cumpliendo, o terminar con el ciclo cuando la condición deje de cumplirse.</p>
 <div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">contador = 0
@@ -536,9 +722,9 @@ while contador < 3:
 							<thead>
 								<tr>
 									<th></th>
-									<th>Contador</th>
+									<th>Variable <code>contador</code></th>
 									<th>Condición</th>
-									<th>print()</th>
+									<th><code>print()</code></th>
 								</tr>
 							</thead>
 							<tbody>
@@ -603,99 +789,208 @@ while contador < 3:
 </code></pre></div>
 
 					</section>
-					<!-- <section class="docs-section" id="item-3-3">
-						<h2 class="section-heading">Section Item 3.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section> -->
-			    </article>
-
-			    <article class="docs-article" id="colecciones-datos">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Colecciones de datos</h1>
-					    <section class="docs-intro">
-						    <p>Las colecciones de datos son un tipo de dato compuesto que permite almacenar múltiples valores, incluso de diferentes tipos, en una misma variable.</p>
-						</section>
-				    </header>
-				     <section class="docs-section" id="listas">
-						<h2 class="section-heading">Listas</h2>
-						<p>Las listas son un conjunto ordenado de datos (elementos). En otros lenguajes de programación las listas se conocen como arrays, vectores o arreglos.</p>
-						<p>Por el momento, se han utilizado variables para almacenar datos individuales, por ejemplo para guardar el nombre de unas frutas.</p>
-<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">fruta1 = "manzana"
-fruta2 = "uva"
-fruta3 = "platano"</code></pre></div>
-						<h4>Creación de listas</h4>
-						<p>Las listas pueden ser guardadas en variables, y todos sus valores deben ser incluidos dentro de un par de corchetes y separados por coma.</p>
-<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">frutas = ["manzana", "uva", "platano"]</code></pre></div>
-						<h4>Acceso a los elementos</h4>
-						<p>Para obtener los elementos de una lista, simplemente se requiere hacer referencia a la variable que la almacena.</p>
-<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
-# imprime ["manzana", "uva", "platano"]</code></pre></div>
-						<p>Sin embargo, es factible acceder a un determinado elemento haciendo referencia a su índice. Un número entero que va desde 0 hasta la cantidad de elementos menos 1.</p>
-<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas[0]) # imprime "manzana"
-print(frutas[1]) # imprime "uva"
-print(frutas[2]) # imprime "platano"</code></pre></div>
-						<h4>Modificación de elementos</h4>
-						<p>Los valores asignados a cada elemento pueden ser cambiados, haciendo referencia al índice del elemento para asignarle un nuevo valor.</p>
-<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
-# imprime ["manzana", "uva", "platano"]
-
-frutas[2] = "pera"
-
-print(frutas)
-# imprime ["manzana", "uva", <strong>"pera"</strong>]
+					<section class="docs-section" id="for">
+						<h2 class="section-heading">Ciclo FOR</h2>
+						<p>Es una estructura de control iterativa para ejecutar instrucciones en forma repetitiva, y se diferencia del ciclo WHILE porque el número de repeticiones es conocido. Además, los ciclos no están sujetos a una condición.</p>
+						<br>
+						<h4>Operador IN</h4>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="console hljs">for ELEMENTO in ITERABLE:
+    instrucciones
 </code></pre></div>
-						<h4>Agregación de elementos</h4>
-						<p>Por medio del método <code>.append()</code> se agrega un nuevo elemento al final de una lista.</code></p>
-<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
-# imprime ["manzana", "uva", "pera"]
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">lista_numeros = [8, 2, 10, 5]
 
-frutas.append("fresa")
-
-print(frutas)
-# imprime ["manzana", "uva", "pera", <strong>"fresa"</strong>]
+for numero in lista_numeros:
+    print(numero)
 </code></pre></div>
-						<p>A través del método <code>.insert()</code> se agrega un nuevo elemento en una posición dada (índice).</p>
-<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
-# imprime ["manzana", "uva", "pera", "fresa"]
-
-frutas.insert(2, "kiwi")
-
-print(frutas)
-# imprime ["manzana", "uva", <strong>"kiwi"</strong>, "pera", "fresa"]
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Variable <code>numero</code></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1° iteración</td>
+									<td>8</td>
+								</tr>
+								<tr>
+									<td>2° iteración</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>3° iteración</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>4° iteración</td>
+									<td>5</td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+						<h4>Función RANGE()</h4>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">for i in range(4):
+    print(i)
 </code></pre></div>
-						<h4>Eliminación de elementos</h4>
-						<p>El método <code>.pop()</code> elimina el último elemento de una lista.</p>
-<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
-# imprime ["manzana", "uva", "kiwi", "pera", "fresa"]
-
-frutas.pop()
-
-print(frutas)
-# imprime ["manzana", "uva", "kiwi", "pera"]
+						<p></p>
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Variable <code>i</code></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1° iteración</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>2° iteración</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>3° iteración</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>4° iteración</td>
+									<td>3</td>
+								</tr>
+							</tbody>
+						</table>
+<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">for i in range(5, 9):
+    print(i)
 </code></pre></div>
-						<p>Del mismo modo el método <code>.pop()</code> puede eliminar un elemento en particular si se precisa su índice.</p>
-<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">print(frutas)
-# imprime ["manzana", "uva", "kiwi", "pera"]
-
-frutas.pop(2)
-
-print(frutas)
-# imprime ["manzana", "uva", "pera"]
+						<p></p>
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Variable <code>i</code></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1° iteración</td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<td>2° iteración</td>
+									<td>6</td>
+								</tr>
+								<tr>
+									<td>3° iteración</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>4° iteración</td>
+									<td>8</td>
+								</tr>
+							</tbody>
+						</table>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">for i in range(10, 17, 2):
+    print(i)
 </code></pre></div>
-
-						<div class="callout-block callout-block-info">
-							<div class="content">
-								<h4 class="callout-title">
-									<span class="callout-icon-holder me-1">
-										<i class="fas fa-circle-info"></i>
-									</span>
-									Info
-								</h4>
-								<p>El método <code>.pop()</code> además de eliminar un elemento, devuelve el elemento borrado, en caso que sea necesario conocerlo.</p>
-							</div>
-						</div>
+						<p></p>
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Variable <code>i</code></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1° iteración</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>2° iteración</td>
+									<td>12</td>
+								</tr>
+								<tr>
+									<td>3° iteración</td>
+									<td>14</td>
+								</tr>
+								<tr>
+									<td>4° iteración</td>
+									<td>16</td>
+								</tr>
+							</tbody>
+						</table>
 					</section>
 			    </article>
+
+			    <!-- <article class="docs-article" id="funciones">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Funciones</h1>
+					    <section class="docs-intro">
+						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						</section>
+				    </header>
+				    <section class="docs-section" id="creacion-funciones">
+						<h2 class="section-heading">Creación de funciones</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">def saludar():
+    print('Hola')
+</code></pre></div>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">saludar()
+# 'Hola'
+</code></pre></div>
+					</section>
+				    <section class="docs-section" id="funciones-con-parametros">
+						<h2 class="section-heading">Funciones con parámetros</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">def saludar(nombre):
+    print(f'Hola {nombre}')
+</code></pre></div>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">saludar('Juan')
+# 'Hola Juan'
+</code></pre></div>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">saludar('María')
+# 'Hola María'
+</code></pre></div>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">def calcular_pago(precio, cantidad, impuesto=1.19):
+    total = precio * cantidad * impuesto
+    print(f'Debes pagar ${total:.0f}')
+</code></pre></div>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">calcular_pago(1190, 3)
+# 'Debes pagar $4248'
+</code></pre></div>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">calcular_pago(1190, 3, 1.35)
+# 'Debes pagar $4820'
+</code></pre></div>
+					</section>
+				    <section class="docs-section" id="funciones-con-retorno">
+						<h2 class="section-heading">Funciones con returno</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">def promedio(num1, num2, num3):
+    suma = num1 + num2 + num3
+    promedio = suma / 3
+    return promedio
+</code></pre></div>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">promedio(14, 2, 8)
+# Nada por pantalla
+</code></pre></div>
+						<p></p>
+<div class="docs-code-block"><pre class="shadow-lg rounded"><code class="python hljs">resultado = promedio(14, 2, 8)
+print(resultado)
+# 8.0
+</code></pre></div>
+					</section>
+				</article> -->
+
 			<!--
 			    <article class="docs-article" id="section-5">
 				    <header class="docs-header">
@@ -704,130 +999,9 @@ print(frutas)
 						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
 						</section>
 				    </header>
-				     <section class="docs-section" id="item-5-1">
+				    <section class="docs-section" id="item-5-1">
 						<h2 class="section-heading">Section Item 5.1</h2>
 						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section>
-					
-					<section class="docs-section" id="item-5-2">
-						<h2 class="section-heading">Section Item 5.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section>
-					
-					<section class="docs-section" id="item-5-3">
-							<h2 class="section-heading">Section Item 5.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section>
-			    </article>
-
-		        <article class="docs-article" id="section-6">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Web</h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-						</section>
-				    </header>
-				     <section class="docs-section" id="item-6-1">
-						<h2 class="section-heading">Section Item 6.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section>
-					
-					<section class="docs-section" id="item-6-2">
-						<h2 class="section-heading">Section Item 6.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section>
-					
-					<section class="docs-section" id="item-6-3">
-							<h2 class="section-heading">Section Item 6.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section>
-			    </article>
-
-			    <article class="docs-article" id="section-7">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Mobile</h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-						</section>
-				    </header>
-				     <section class="docs-section" id="item-7-1">
-						<h2 class="section-heading">Section Item 7.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section>
-					
-					<section class="docs-section" id="item-7-2">
-						<h2 class="section-heading">Section Item 7.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section>
-					
-					<section class="docs-section" id="item-7-3">
-							<h2 class="section-heading">Section Item 7.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section>
-			    </article>
-
-			    <article class="docs-article" id="section-8">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Resources</h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-						</section>
-				    </header>
-				     <section class="docs-section" id="item-8-1">
-						<h2 class="section-heading">Section Item 8.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section>
-					
-					<section class="docs-section" id="item-8-2">
-						<h2 class="section-heading">Section Item 8.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section>
-					
-					<section class="docs-section" id="item-8-3">
-							<h2 class="section-heading">Section Item 8.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section>
-			    </article>
-
-			    <article class="docs-article" id="section-9">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">FAQs</h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. You can list all your FAQs using the format below.</p>
-						</section>
-				    </header>
-				     <section class="docs-section" id="item-9-1">
-						<h2 class="section-heading">Section Item 9.1 <small>(FAQ Category One)</small></h2>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?</h5>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
-						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I  bibendum sodales?</h5>
-						<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
-						<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
-					</section>
-					
-					<section class="docs-section" id="item-9-2">
-						<h2 class="section-heading">Section Item 9.2 <small>(FAQ Category Two)</small></h2>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?</h5>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
-						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I  bibendum sodales?</h5>
-						<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
-						<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
-					</section>
-					
-					<section class="docs-section" id="item-9-3">
-							<h2 class="section-heading">Section Item 9.3 <small>(FAQ Category Three)</small></h2>
-						    <h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to dapibus sollicitudin justo vel fermentum?</h5>
-							<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-							<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How long bibendum sodales?</h5>
-							<p>Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
-							<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where dapibus sollicitudin?</h5>
-							<p>Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
 					</section>
 			    </article>
 			-->
